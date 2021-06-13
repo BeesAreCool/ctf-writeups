@@ -50,7 +50,8 @@ I then verify that from a base data type I am able to access its base class, sin
 Python makes heavy use of several programming language paradigms. Firstly, basically everything is an object. This means almost everything has variables that can be accessed with `.` notation, like `object.variable`. We can use the `dir(object)` function to find a list of variables an object has. For instance, we can call `dir(1)`. This will list the following from my (local) python shell.
 
 ```>>> dir(1)
-['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']```
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+```
 
 You can then access any of these; however, you may get some syntax errors if you directly access them, for instance on an int you can't simple do ```1.bit_length```, this because python doesn't really intend you to do this with numbers specific. If you wrap it in parenthesis, you can then run ```(1).bit_length``` which will return ```<built-in method bit_length of int object at 0x8ff940>```, showing that this attribute is a method. In this case it will return the length of the int in bits but that is not especially relevant to this problem.
 
@@ -78,7 +79,8 @@ One especially useful attribute that is sometimes defined on a function or metho
 
 An example of this is shown in the following code which shows us accesing the global namespace of a function from the random module. If you want an example that does not work, most functions in the math module are self contained and as such don't need to bring their namespace with them.
 ```import random
-print(random.randint.__globals__)```
+print(random.randint.__globals__)
+```
 
 __This lets us pivot from ANY namespace to the namespace of ANY function we can access if it accesses its own namespace!__
 
