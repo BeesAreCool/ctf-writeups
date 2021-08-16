@@ -351,3 +351,14 @@ RACTF staff desperately trying to get people to do heap pwn:
     But how does that help
     It gets XORed with random anyway
 ```
+
+#### Intended solve?
+
+Huge shoutout to "Babaisflag" for telling me this.
+
+You could use ulimit to shrink the maximim allocated memory. By doing this, the malloc call would return 0. This means the encryption is bypassed entirely and the encrypted flag is simply printed with hex encoding. 
+
+```
+$ ulimit -Sv 1000000 && ./program
+72616374667b437572625f593075725f4d336d4f72795f416c6c6f63347431306e7d0000000000000000000000000000
+```
