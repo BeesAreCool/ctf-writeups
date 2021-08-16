@@ -1,4 +1,4 @@
-# THCon21 - Reversing/Pwn - Break that Binary!
+# Really Awesome CTF - Reversing/Pwn - Break that Binary!
 
 ## SSH in to trick a SUID binary to read the flag and leak it.
 
