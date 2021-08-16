@@ -248,7 +248,7 @@ Running `grep -i "\.enc" -r .` will find all files that mentioned ".enc". Note t
 grep: ./files.zip: binary file matches
 ```
 
-#GREPing for "data_privacy_url".
+#### GREPing for "data_privacy_url".
 
 We know from the strings.xml file that the name for the link to the zip is "data_privacy_url". This name will appear in most every place that wants to access the string . While there is also an integer representation of the string name that will be defined which can be grepped for, that was not needed in this case. 
 
