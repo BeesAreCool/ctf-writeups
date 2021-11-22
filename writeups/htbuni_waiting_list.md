@@ -2,7 +2,7 @@
 
 ## Cheese an ECDSA solve or do big complex lattice stuff
 
-As you approach SafetyCorp's headquarters, you come across an enormous cogwork tree, and as you watch, a mechanical snake slithers out of a valve, inspecting you carefully. Can you build a disguise, and slip past it?
+Your mechanical arm needs to be replaced. Unfortunately, Steamshake Inc which is the top mechanical arm transplants has a long waiting list. You have found a SQL injection vulnerability and recovered two tables from their database. Could you take advantage of the information in there to speed things up? Don't forget, you have a date on Monday!
 
 ## A quick note
 
