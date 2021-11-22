@@ -4,7 +4,7 @@
 
 Description: *The extraterrestrials have upgraded their authentication system and now only them are able to pass. Did you manage to learn their language well enough in order to bypass the the authorization check?*
 
-This challenges follows up on [CyberApocalypse - Input as a Service](cyberapocalypse_input_as_a_service.md). This previous challenge was a very basic python shell escape with no filters. 
+This challenges follows up on CyberApocalypse - Input as a Service. This previous challenge was a very basic python shell escape with no filters. 
 
 ## Follow along!
 
