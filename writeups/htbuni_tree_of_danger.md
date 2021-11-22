@@ -187,3 +187,7 @@ HTB{45ts_4r3_pr3tty_c00l!}0
 ## Post-solve big ideas
 
 If you can get a foothold in python, you can easily pivot to RCE. Because the AST checks were bad for the dictionary we were allowed to have a single unsafe element; however, all child elements of that node on the AST tree could also be unsafe. That let us bypass "bad character" checks and run arbitrary python code, giving us the ability to access the os module and then run bash commands.
+
+## Post-solve small ideas
+
+Doing the pivot to the OS module was overkill and not really needed after getting past the AST. You could technically just open the flag file and read it. However, I overestimated the amount of restrictions on builtins access.
