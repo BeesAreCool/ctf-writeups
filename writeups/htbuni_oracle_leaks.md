@@ -204,8 +204,16 @@ for z in range(60):
         break
 #print(trial_reduce(ct))
 ```
-```
 
 We now have the flag!
+
+```
+----------------------------------------------------------------------------------------------------
+0x21ae02dff835a73e90b2256c4dc5a303f58861134fe9146df3860d0946f543b3dedd8e23c388f5022274113d2728065f7bde6b9266b5620859491cdb01dd11d88fe76ebdcad44d0ec7fbf207216c69156d37e004854427b6d346e673372355f34747434636b5f31355f633030315f346e645f756e64337276346c7533647c
+0x21ae02dff835a73e90b2256c4dc5a303f58861134fe9146df3860d0946f543b3dedd8e23c388f5022274113d2728065f7bde6b9266b5620859491cdb01dd11d88fe76ebdcad44d0ec7fbf207216c69156d37e004854427b6d346e673372355f34747434636b5f31355f633030315f346e645f756e64337276346c7533647d
+b'\x02\x1a\xe0-\xff\x83Zs\xe9\x0b"V\xc4\xdcZ0?X\x86\x114\xfe\x91F\xdf8`\xd0\x94oT;=\xed\xd8\xe2<8\x8fP"\'A\x13\xd2r\x80e\xf7\xbd\xe6\xb9&kV \x85\x94\x91\xcd\xb0\x1d\xd1\x1d\x88\xfev\xeb\xdc\xadD\xd0\xec\x7f\xbf r\x16\xc6\x91V\xd3~\x00HTB{m4ng3r5_4tt4ck_15_c001_4nd_und3rv4lu3d|'
+---------------------------------------------------------------------------------------------------- 297.01129338534476 254
+
+```
 
 As a note, this script actually fails to correctly get the very last bit of the flag. I assume I have an off by one error somewhere, but I can't really be bothered to fix it at this time.
