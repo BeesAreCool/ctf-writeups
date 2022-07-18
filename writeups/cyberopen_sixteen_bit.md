@@ -7,6 +7,10 @@
 
 During the ICC competition we where given a shellcoding challenge to make a base64 encoded shellcode, ie the shellcode could only consist of the characters "a-zA-Z0-9+/=", during an 8 hour ctf we completed it in about 1.5 hours. How long will it take you to create base16 shellcode?
 
+### tl;dr
+
+To solve you had to write shellcode that makes use of xors of known constant data values in order to builds a loader shellcode.
+
 ## Triage
 
 We're given a binary that isn't exceptionally interesting. Below is decompiled code from a few key functions that show how it operates.
